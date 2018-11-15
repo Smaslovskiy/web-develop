@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NORTHSBEST</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+		<!-- Site by instagram.com/yungclouty -->
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127532659-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-127532659-1');
+        </script>
+        
+        <!-- Facebook Pixel Code -->
+        <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '718861711805650');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=718861711805650&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
+        <link rel="stylesheet" href="css/style.css">
+		<style>
+			body {
+				background: url(res/bg.jpg) no-repeat center center fixed;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-size: cover;
+			}
+			a {	color: #ff0080;	text-decoration: none; }
+			a:hover { color: #0080ff; }
+
+			canvas { 
+				width: 100%;
+				height: 100%;
+			}
+
+			#webglmessage { margin-top:15em !important }
+			@media (max-width: 640px) {
+				body {
+					background: url(res/mbg2.jpg);
+					background-size: cover !important;
+				}
+				.album {
+	                width: 60% !important;
+	                margin-left: -30% !important;
+	            }
+			}
+			.clickable {
+				display: block;
+				position: absolute;
+				top: 25vh;
+				height: 40vh;
+				cursor: pointer;
+				width: 100%;
+			}
+			.album {
+                display: block;
+                position: absolute;
+                left: 50%;
+                bottom: 5%;
+                margin-left: -10%;
+                margin-right: auto;
+                width: 20%;
+            }
+            .album img {
+            	width: 100%;
+            }
+		</style>
+	</head>
+
+	<body>
+
+        <!-- Site by instagram.com/yungclouty -->
+		<script src="js/three.min.js"></script>
+
+		<script src="js/WebGL.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		<script src="js/MTLLoader.js"></script>
+		<script src="js/opentype.min.js"></script>
+		<script src="js/TTFLoader.js"></script>
+		<script src="js/DeviceOrientationControls.js"></script>
+		
+<!-- 		<a href="https://umusic.digital/atfvhw/">
+			<div class="album">
+			    <img src="img/albumcover.png" alt"Album Cover">
+			</div>
+		</a> -->
+		<div class="top-buttons"><a href="concert-list.html">TOUR</a> | <a href="#">MERCH</a></div>
+		<div class="clickable" id="click" onclick="window.open('https://umusic.digital/atfvhw/')"></div>
+	</body>
+	<script src="js/app.js"></script>
+</html>

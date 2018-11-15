@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Benguiat;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/Benguiat-Bold.eot);
+    src: url(../fonts/Benguiat-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Benguiat-Bold.woff) format("woff"), url(../fonts/Benguiat-Bold.ttf) format("truetype");
+}
+body, button, input {
+    margin: 0;
+    padding: 0;
+}
+.top-buttons {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 15px;
+    font-family: Benguiat;
+    color:  white;
+}
+.concert-list__purchase,
+.top-buttons a{
+    color:  white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+.concert-list__purchase::after,
+.top-buttons a::after{
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    display: block;
+    bottom: 0;
+    background-color: white;
+    transition: all .3s ease-out;
+}
+.top-buttons a:hover {
+    color: white;
+}
+.concert-list__purchase:hover::after,
+.top-buttons a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.top-buttons a:first-of-type{
+    margin-right: 60px;
+}
+.top-buttons a:last-of-type{
+    margin-left: 60px;
+}
+.concert-list {
+    padding-top: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: Benguiat;
+    padding-bottom: 200px;
+}
+.concert-list__header {
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.concert-list__text {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+.concert-list__item {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-align: left;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.concert-list__item.blue {
+    color: #87a7c8;
+}
+.concert-list__item .concert-list__date {
+    width: 15%;
+    display: block;
+}
+.concert-list__item .concert-list__country {
+    width: 45%;
+    display: block;
+    text-align: left;
+}
+.concert-list__item .concert-list__place {
+    width: 32%;
+    display: block;
+    text-align: right
+}
+.concert-list__purchase {
+    display: block;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 45%;
+    font-size: 46px;
+    margin: 45px auto;
+    text-transform: uppercase;
+}
+.logo-block {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-block img.logo-block__limonade {
+    max-width: 60px;
+    width: 100%;
+    margin-right: 50px;
+}
+.logo-block img.logo-block__m {
+    max-width: 90px;
+    width: 100%;
+}
+
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(240, 243, 245, 0.98);
+    color: #6489b2;
+    font-size: 30px;
+    width: 65%;
+    font-family: Benguiat;
+    text-align: center;
+    height: 420px;
+    display: none;
+}
+.modal-content {
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+.modal-window__close-btn {
+    position: absolute;
+    right: 10px;
+    top:  10px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41474d;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    cursor: pointer;
+}
+.modal-window__header {
+    font-size: 65px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+.input-block {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+.modal__input {
+    width: 70%;
+    height: 100%;
+    border: 4px solid #6589b3;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0;
+}
+.modal__btn {
+    background-color: #6589b3;
+    color: white;
+    border: 2px solid #6589b3;
+    padding: 0px 5px;
+    font-family: Benguiat;
+    font-size: 33px;
+    cursor: pointer;
+    margin: 0;
+}
+@media screen and (min-width: 1920px){ 
+    .concert-list__item {
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 1024px){ 
+    .concert-list__item {
+        font-size: 28px;
+    }
+    .concert-list__purchase {
+       font-size: 34px;
+    }
+    .modal-window {
+        width: 80%;
+        font-size: 26px;
+        height: 350px;
+        display: block;
+    }
+    .modal-window__header {
+        font-size: 42px
+    }
+}
+@media screen and (max-width: 768px){ 
+    .concert-list__item {
+        font-size: 20px;
+    }
+    .concert-list__purchase {
+       font-size: 28px;
+    }
+    .concert-list__text {
+        font-size: 28px;
+    }
+    .concert-list__header{
+        max-width: 80%;
+    }
+    .modal-window {
+        width: 90%;
+        font-size: 20px;
+        height: 300px;
+    }
+    .modal-window__header {
+        font-size: 38px
+    }
+}
+@media screen and (max-width: 450px){ 
+    .concert-list__item {
+        font-size: 12px;
+    }
+    .concert-list__purchase {
+       font-size: 16px;
+    }
+    .concert-list__text {
+        font-size: 16px;
+    }
+    .concert-list__header{
+        max-width: 80%;
+    }
+    .modal-window {
+        width: 90%;
+        font-size: 14px;
+        height: 300px;
+    }
+    .modal-window__header {
+        font-size: 32px
+    }
+    
+}
